@@ -1,0 +1,88 @@
+http://pymote.readthedocs.io/en/latest/install/windows_virtualenv.html
+
+#1) Making a directory as Environments folder for all projects in one place.
+
+"mkdir PY_Environments"
+
+#2) Login to the directory by "cd PY_Environments"
+
+#3) Make a first virutal env for maddy_env:
+
+"virtualenv maddy_env"
+
+then its create [installing setuptools, pip ..]
+
+#4) To active the newly created env.
+
+ maddy_env\Scripts\activate
+
+then it will show the (maddy_env) in the prompt
+
+we can also cofirm the env by giving the command
+"which pyton" (without quotes)
+
+then its show the current python project environment details.
+
+#5) We can list the installed packages in the maddy_env by 
+
+"pip list"
+
+#6) Now we can install the packages that we need to start the project by 
+
+"pip install <package name>"
+
+#7) We can take the dependiencies of particular project (project1_env) by 
+
+pip freeze --local > requirements.txt
+
+this will save all the packages that are installed in the project1_env with their verions no's.
+
+#8) To get back to the global envirnment or quit the current python environment by,
+
+"deactivate"
+
+and issue the following command
+
+
+"rm -rf maddy_env"
+
+then its nolongar show the project1_env in the prompt and we completed get away from the maddy_env environment.
+
+#9) We can create an environment from the requirements.txt file, that we already exported from the different virtualenvironment by
+
+#3),#4),#5) and 
+
+pip install -r requirements.txt
+
+its install's all the pacakages that exist in the requirements.txt file.
+
+
+Virtualenvwrapper:
+
+The idea behind virtualenvwrapper is to ease usage of Ian Bicking’s virtualenv, a tool for creating isolated Python virtual environments, each with their own libraries and site-packages.
+
+# using pip
+pip install virtualenvwrapper-win
+
+Ref:
+https://pypi.python.org/pypi/virtualenvwrapper-win
+
+.,.,.,,.,.,.,.,.,.,.,,.,.,.,.,.,.
+http://stackoverflow.com/questions/1534210/use-different-python-version-with-virtualenv
+
+virtualenv --python=c:\Python25\python.exe envname
+.,.,.,,.,.,.,.,.,.,.,,.,.,.,.,.,.
+
+Github:
+
+https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/
+
+
+
+
+
+
+
+
+
+
